@@ -10,6 +10,7 @@ public class Camera {
 
     }
     public static Integer getX() {
+
         return x;
     }
 

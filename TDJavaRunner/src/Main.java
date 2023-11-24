@@ -17,18 +17,19 @@ public class Main extends Application {
         primaryStage.setTitle("Hello world");
         Group root = new Group();
         Pane pane = new Pane(root);
-        Scene theScene = new Scene(pane, 600, 400,true);
+        Scene theScene = new GameScene(pane, 800, 400, new Camera(200, 100), new StaticThing("img\\desert", 800, 400), new StaticThing("img\\desert", 800, 400), 3);
         primaryStage.setScene(theScene);
-
         primaryStage.show();
         }
 
         public static void main(String[] args) {
         launch(args);
+        /*Image BackSheet = new Image("img\\desert.png");
+        ImageView Back = new ImageView(BackSheet);
         Image spriteSheet = new Image("img\\heros.png");
         ImageView sprite = new ImageView(spriteSheet);
         sprite.setViewport(new Rectangle2D(20,0,65,100));
         sprite.setX(200);
-        sprite.setY(300);
+        sprite.setY(300);*/
         }
 }
